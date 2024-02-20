@@ -1,3 +1,4 @@
+import 'package:break_app/core/utils/app_bar.dart';
 import 'package:flutter/material.dart';
 
 class LumberExcavationScreen extends StatelessWidget {
@@ -5,6 +6,8 @@ class LumberExcavationScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+   return  Scaffold(
+      appBar: appBarWidget(),
+    );
   }
 }

@@ -1,3 +1,4 @@
+import 'package:break_app/core/utils/app_bar.dart';
 import 'package:break_app/core/utils/app_string.dart';
 import 'package:break_app/models/model_card.dart';
 import 'package:break_app/ui/screens/head_protrudes_forward_screen.dart';
@@ -50,16 +51,7 @@ class _ProductCardState extends State<ProductCard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.transparent,
-        title: const Text(
-          'Break App',
-          style: TextStyle(
-            color: Colors.black,
-          ),
-        ),
-      ),
+      appBar: appBarWidget(),
       body: SizedBox(
         width: double.infinity,
         height: double.infinity,
